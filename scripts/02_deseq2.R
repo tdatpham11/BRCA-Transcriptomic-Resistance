@@ -31,3 +31,4 @@ write.csv(as.data.frame(res), "results/tables/brca_dge_results.csv")
 write.csv(as.data.frame(res), "results/tables/brca_dge_results.csv")
 
 print("DGE Analysis Complete! Results saved to results/tables/")
+saveRDS(dds, file = "data/brca_dds_model.rds")
