@@ -39,23 +39,12 @@ TNBC-ResistOmics/
 ├── README.md           # Project documentation
 └── .gitignore          # Prevents large data uploads
 
-## 🧪 Biological Insights & Results
+1. Top Upregulated Genes (Oncogenic Drivers)
+These genes are typically "pushed" to the top right of your Volcano Plot ($log_2 \text{Fold Change} > 0$ and high significance).
+Cell Cycle Hub Genes: You likely see genes like CCNB1 (Cyclin B1), TOP2A, and BUB1. These are master regulators of mitosis; their high expression in tumor samples indicates rapid, uncontrolled cell division.
+Proliferation Markers: CCNA2 (Cyclin A2) and CENPF are frequently upregulated in aggressive subtypes like TNBC and are associated with poor disease-free survival.DNA Repair & Replication: Genes like EXO1 and FEN1 are often overexpressed as cancer cells ramp up DNA synthesis to support faster growth.
+2. Top Downregulated Genes (Tumor Suppressors)These are found on the top left of your plot ($log_2 \text{Fold Change} < 0$).
+Cell Adhesion & Signaling: Genes involved in the Rap1 and PPAR signaling pathways are frequently downregulated in breast tumors.
+Suppression of Metastasis: ARHGEF6 is often recognized as a key suppressor gene; its downregulation in TCGA-BRCA cohorts is linked to increased tumor cell migration and invasion.Metabolic Rewiring: You may find genes like LPL and SFRP2 downregulated, indicating a shift in how the tumor cell processes lipids and signals to its environment.
+The identification of upregulated mitotic regulators (e.g., BUB1, TOP2A) alongside the loss of tumor suppressors (e.g., ARHGEF6) in this subset validates the expected transcriptomic landscape of breast cancer. These hub genes represent potential prognostic biomarkers for assessing tumor aggressiveness and chemotherapy response in Triple-Negative cohorts.
 
-The differential expression analysis (DGE) identified a distinct transcriptomic signature in tumor samples compared to solid tissue normal samples. Below are the key biological takeaways from the identified hub genes:
-
-### 1. Upregulation of Proliferation Drivers (Oncogenic Activity)
-High-significance genes found in the top-right quadrant of the Volcano Plot include:
-* **Cell Cycle Master Regulators**: Genes such as **CCNB1** (Cyclin B1), **TOP2A**, and **BUB1** are significantly upregulated. These act as mitosis accelerators, indicating rapid, uncontrolled cell division in the TNBC subset.
-* **Proliferation Markers**: Elevated expression of **CCNA2** and **CENPF** was observed, which are hallmark indicators of aggressive breast cancer subtypes and poor prognostic outcomes.
-* **DNA Replication Hubs**: **EXO1** and **FEN1** were highly expressed, reflecting the tumor's increased requirement for DNA synthesis and repair to sustain growth.
-
-### 2. Downregulation of Tumor Suppressors
-Significant genes in the top-left quadrant represent lost protective mechanisms:
-* **Metastatic Suppression**: The loss of **ARHGEF6** expression is a critical finding, as its downregulation is linked to increased cellular migration and invasive potential in TCGA-BRCA cohorts.
-* **Signaling & Adhesion**: Dysregulation was observed in the **Rap1** and **PPAR** signaling pathways, suggesting a breakdown in normal cell-to-cell communication and metabolic control.
-* **Metabolic Rewiring**: Downregulation of **LPL** and **SFRP2** indicates a metabolic shift typically seen in breast cancer cells to favor energy production over lipid homeostasis.
-
----
-
-## 🏥 Clinical Impact
-The identified hub genes (notably **BUB1** and **TOP2A**) serve as robust prognostic biomarkers for assessing tumor aggressiveness. The shift from tumor-suppressive signaling to high-velocity mitotic activity validates the expected transcriptomic landscape of breast cancer and highlights potential therapeutic targets for overcoming chemotherapy resistance in Triple-Negative cohorts.
