@@ -38,3 +38,24 @@ TNBC-ResistOmics/
 ├── envs/               # environment.yml for conda setup
 ├── README.md           # Project documentation
 └── .gitignore          # Prevents large data uploads
+
+## 🧪 Biological Insights & Results
+
+The differential expression analysis (DGE) identified a distinct transcriptomic signature in tumor samples compared to solid tissue normal samples. Below are the key biological takeaways from the identified hub genes:
+
+### 1. Upregulation of Proliferation Drivers (Oncogenic Activity)
+High-significance genes found in the top-right quadrant of the Volcano Plot include:
+* **Cell Cycle Master Regulators**: Genes such as **CCNB1** (Cyclin B1), **TOP2A**, and **BUB1** are significantly upregulated. These act as mitosis accelerators, indicating rapid, uncontrolled cell division in the TNBC subset.
+* **Proliferation Markers**: Elevated expression of **CCNA2** and **CENPF** was observed, which are hallmark indicators of aggressive breast cancer subtypes and poor prognostic outcomes.
+* **DNA Replication Hubs**: **EXO1** and **FEN1** were highly expressed, reflecting the tumor's increased requirement for DNA synthesis and repair to sustain growth.
+
+### 2. Downregulation of Tumor Suppressors
+Significant genes in the top-left quadrant represent lost protective mechanisms:
+* **Metastatic Suppression**: The loss of **ARHGEF6** expression is a critical finding, as its downregulation is linked to increased cellular migration and invasive potential in TCGA-BRCA cohorts.
+* **Signaling & Adhesion**: Dysregulation was observed in the **Rap1** and **PPAR** signaling pathways, suggesting a breakdown in normal cell-to-cell communication and metabolic control.
+* **Metabolic Rewiring**: Downregulation of **LPL** and **SFRP2** indicates a metabolic shift typically seen in breast cancer cells to favor energy production over lipid homeostasis.
+
+---
+
+## 🏥 Clinical Impact
+The identified hub genes (notably **BUB1** and **TOP2A**) serve as robust prognostic biomarkers for assessing tumor aggressiveness. The shift from tumor-suppressive signaling to high-velocity mitotic activity validates the expected transcriptomic landscape of breast cancer and highlights potential therapeutic targets for overcoming chemotherapy resistance in Triple-Negative cohorts.
