@@ -38,8 +38,7 @@ TNBC-ResistOmics/
 ├── envs/               # environment.yml for conda setup
 ├── README.md           # Project documentation
 └── .gitignore          # Prevents large data uploads
-
-1. Top Upregulated Genes (Oncogenic Drivers)
+# 1. Top Upregulated Genes (Oncogenic Drivers)
 These genes are typically "pushed" to the top right of your Volcano Plot ($log_2 \text{Fold Change} > 0$ and high significance).
 Cell Cycle Hub Genes: You likely see genes like CCNB1 (Cyclin B1), TOP2A, and BUB1. These are master regulators of mitosis; their high expression in tumor samples indicates rapid, uncontrolled cell division.
 Proliferation Markers: CCNA2 (Cyclin A2) and CENPF are frequently upregulated in aggressive subtypes like TNBC and are associated with poor disease-free survival.DNA Repair & Replication: Genes like EXO1 and FEN1 are often overexpressed as cancer cells ramp up DNA synthesis to support faster growth.
