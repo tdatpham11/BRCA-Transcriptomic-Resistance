@@ -17,7 +17,16 @@ dds <- DESeq(dds)
 
 # 5. Get results
 res <- results(dds, contrast=c("definition", "Primary Tumor", "Solid Tissue Normal"))
+# 5. Check exactly what the comparisons are called
+# This will print something like "definition_Primary.Tumor_vs_Solid.Tissue.Normal"
+print(resultsNames(dds))
 
+# 6. Get results using the exact name from the step above
+# Instead of c("definition", "...", "..."), we use the 'name' argument
+res <- results(dds, name = "definition_Primary.Tumor_vs_Solid.Tissue.Normal")
+
+# 7. Save results
+write.csv(as.data.frame(res), "results/tables/brca_dge_results.csv")
 # 6. Save results to a CSV for your GitHub
 write.csv(as.data.frame(res), "results/tables/brca_dge_results.csv")
 
