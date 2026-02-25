@@ -1,0 +1,14 @@
+# Ignore raw data and large objects
+data/raw/
+GDCdata/
+*.rds
+*.RData
+
+# Ignore results that can be regenerated
+results/plots/*.png
+results/tables/*.csv
+
+# Ignore system files
+.Rhistory
+.Rproj.user
+.DS_Store
